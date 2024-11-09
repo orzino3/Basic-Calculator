@@ -1,0 +1,34 @@
+button{
+    border-radius: 100px;
+    padding: 50px;
+    margin: 10px;
+    width: fit-content;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-width: 5px;
+}
+
+body{
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 60px;
+    background-color: lightgray;
+}
+
+.calc{
+    background-color: orange;
+}
+
+.execute{
+    background-color: black;
+    color: white;
+}
+
+.description{
+color: darkgray ;
+font-size: 30px;
+}
