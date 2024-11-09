@@ -10,6 +10,8 @@ function showValue(value){
     else{
         cleanLine();
         hasBeenCaluclated = false;
+        alert("Resetting Calculator Display...")
+        hasBeenCaluclated = false;
     }
 }
 
