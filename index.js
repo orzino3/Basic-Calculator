@@ -75,6 +75,39 @@ function calculate(){
             applyResult();
         }
     }
+function enableSelection() {
+        const enabled = document.getElementById('enabler').checked;
+    
+        if (enabled) {
+            document.getElementById('lightGray').disabled = false;
+            document.getElementById('darkGray').disabled = false;
+        } else {
+            document.getElementById('lightGray').disabled = true;
+            document.getElementById('darkGray').disabled = true;
+    
+            document.body.classList.remove('lightSelection');
+            document.body.classList.remove('darkSelection');
 
+            resetSelection();
+        }
+    }
+    
+    function setColor() {
+        const isLightGray = document.getElementById('lightGray').checked;
+        const isDarkGray = document.getElementById('darkGray').checked;
+    
+        if (isLightGray) {
+            document.body.classList.add('lightSelection');
+            document.body.classList.remove('darkSelection');
+        } else if (isDarkGray) {
+            document.body.classList.add('darkSelection');
+            document.body.classList.remove('lightSelection');
+        }
+    }
+
+    function resetSelection(){
+        document.getElementById('lightGray').checked=false;
+        document.getElementById('darkGray').checked=false;
+    }
     
     
