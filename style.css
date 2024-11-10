@@ -32,3 +32,16 @@ body{
 color: darkgray ;
 font-size: 30px;
 }
+
+form{
+    font-size: 20px;
+}
+
+
+.lightSelection{
+    background-color: lightgray;
+}
+
+.darkSelection{
+    background-color: rgb(88, 88, 88);
+}
