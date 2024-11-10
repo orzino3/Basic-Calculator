@@ -35,9 +35,20 @@
         <button id="equal" class="execute" onclick="calculate()">=</button>
         <button id="sub" class="calc" onclick="setCalcType(document.getElementById('sub').innerHTML)">-</button>
 
-        <p>Please don't forget to RESET after every calculation!</p>
+        <br><br>
 
         
+        <form>
+            <input onclick="enableSelection()" type="checkbox" id="enabler" name="enabler" checked />
+            <label id="label1" for="enabler">Enable Background Color Selection:</label>
+      
+            <input onclick="setColor()" type="radio" id="lightGray" name="choice"/>
+            <label for="gray">Light Gray</label>
+     
+            <input onclick="setColor()" type="radio" id="darkGray" name="choice"/>
+            <label for="white">Dark Gray</label>
+
+        </form>
         <script src="index.js"></script>
     </body>
     </html>
